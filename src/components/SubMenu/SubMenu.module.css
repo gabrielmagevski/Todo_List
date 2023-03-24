@@ -1,0 +1,61 @@
+.ContainerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 736px;
+
+  margin: 0 auto;
+  padding: 64px 0px 24px;
+}
+
+.WrapperMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasks strong {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+
+  color: var(--blue300);
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.tasks span {
+  text-align: center;
+  background: var(--gray400);
+  border-radius: 50%;
+  padding: 2px 8px;
+  color: var(--gray200);
+  font-size: 0.75rem;
+  line-height: 0.937rem;
+  font-weight: 700;
+}
+
+.tasksCompleted strong {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+
+  color: var(--purple300);
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.tasksCompleted span {
+  text-align: center;
+  background: var(--gray400);
+  border-radius: 50%;
+  padding: 2px 8px;
+  color: var(--gray200);
+  font-size: 0.75rem;
+  line-height: 0.937rem;
+  font-weight: 700;
+}

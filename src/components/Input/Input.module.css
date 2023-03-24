@@ -1,0 +1,48 @@
+.formInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 177px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inputTask {
+  background-color: var(--gray500);
+  border: var(--gray700);
+  border-radius: 8px;
+  color: var(--white);
+  outline: none;
+
+  padding: 1rem;
+  width: 638px;
+  max-width: 100%;
+}
+
+.buttonTask {
+  font-weight: 700;
+  font-size: 0.875rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  background-color: var(--blue500);
+  color: var(--white);
+  border-radius: 8px;
+
+  width: 90px;
+  padding: 1rem;
+  outline: none;
+  border: var(--blue300);
+
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.buttonTask:hover {
+  filter: brightness(0.9);
+}

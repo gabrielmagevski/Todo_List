@@ -1,0 +1,115 @@
+.containerTasks {
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.containerDone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-top: 1px solid var(--gray400);
+  border-radius: 8px;
+  padding: 25px 0px;
+}
+
+.wrapperTitle {
+  text-align: center;
+  color: var(--gray300);
+  line-height: 140%;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+
+  max-width: 500px;
+  width: 100%;
+}
+
+.cardTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  max-width: 736px;
+  width: 100%;
+
+  background-color: var(--gray500);
+  border: 1px solid var(--gray400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+
+  margin: 0.75rem 0;
+  padding: 1rem;
+  gap: 0.75rem;
+  transition: background-color 300ms;
+}
+
+.cardTask:hover {
+  background-color: var(--gray600);
+  cursor: pointer;
+}
+
+.wrapperTextTask {
+  width: 100%;
+  max-width: 632px;
+}
+
+.wrapperTextTask .paragraphUnchecked {
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: var(--gray100);
+  text-decoration: none;
+}
+
+.paragraphChecked {
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: var(--gray100);
+  text-decoration-line: line-through;
+}
+
+.trashTask {
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.trashTask:hover {
+  filter: brightness(0.9);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--blue300);
+  margin: 0;
+  font: inherit;
+  color: var(--blue300);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--blue300);
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  color: var(--purple500);
+  background-color: var(--purple500);
+  border-color: var(--purple500);
+  position: relative;
+  transition: all 200ms;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: var(--white);
+  position: absolute;
+  top: -4px;
+  font-size: 13px;
+  left: 1px;
+}
+
+.checkboxTask input {
+  background-color: transparent;
+}
